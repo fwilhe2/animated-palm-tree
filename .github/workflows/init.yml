@@ -16,7 +16,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: arm
-        path: helo
+        path: hello
 
   mac-intel:
     runs-on: macos-latest
@@ -30,4 +30,4 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: intel
-        path: helo
+        path: hello
