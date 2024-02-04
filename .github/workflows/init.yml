@@ -12,6 +12,11 @@ jobs:
       run: |
         uname -a
         arch
+        clang -o hello hello.c
+    - uses: actions/upload-artifact@v4
+      with:
+        name: arm
+        path: helo
 
   mac-intel:
     runs-on: macos-latest
@@ -21,3 +26,8 @@ jobs:
       run: |
         uname -a
         arch
+        clang -o hello hello.c
+    - uses: actions/upload-artifact@v4
+      with:
+        name: intel
+        path: helo
