@@ -8,6 +8,8 @@ jobs:
     runs-on: macos-14
     steps:
     - uses: actions/checkout@v4
+    - name: Collect Workflow Telemetry
+      uses: catchpoint/workflow-telemetry-action@v1
     - name: DoSomething
       run: |
         uname -a
@@ -22,6 +24,8 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
+    - name: Collect Workflow Telemetry
+      uses: catchpoint/workflow-telemetry-action@v1
     - name: DoSomething
       run: |
         uname -a
